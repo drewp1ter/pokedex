@@ -1,0 +1,26 @@
+@import '@/styles/_helpers';
+
+.pokeNames {
+  min-width: rem(1077);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: rem(30) rem(28);
+
+  @media screen and (min-width: rem(584)) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media screen and (min-width: rem(860)) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.alignWrapper {
+  flex-grow: 1;
+}
+
+.pokeButton {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

@@ -1,0 +1,24 @@
+@import '@/styles/_helpers';
+
+.input {
+  height: rem(53);
+  font-family: 'Source Sans Pro';
+  box-shadow: 4px 4px 16px rgba(1, 28, 64, 0.2);
+  background: #f2f2f2;
+  border-radius: 40px;
+  padding: 0 rem(31);
+  color: rgba(33, 33, 33, 0.8);
+  font-size: 1rem;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    font-family: 'Source Sans Pro';
+    font-size: 1rem;
+    line-height: per(20, 16);
+    color: rgba(33, 33, 33, 0.8);
+  }
+}

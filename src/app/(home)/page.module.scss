@@ -1,0 +1,41 @@
+@import '@/styles/_helpers';
+
+.home {
+  width: 100%;
+  height: 100%;
+  max-width: rem(1077);
+  margin: rem(62) auto 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.pages {
+  display: flex;
+  margin: rem(51) auto 0;
+}
+
+.page {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 24px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background: #212121;
+    opacity: 0.5;
+    transition: opacity ease .2s;
+  }
+
+  &:hover::before {
+    opacity: 0.7;
+  }
+}

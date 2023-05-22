@@ -1,0 +1,32 @@
+@import 'reset-css';
+@import '_fonts'; 
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Karla';
+  font-weight: 400;
+  background: linear-gradient(180deg, #FFF 30.32%, #F5F5F5 100%);
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+

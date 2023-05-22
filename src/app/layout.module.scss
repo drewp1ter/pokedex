@@ -1,0 +1,28 @@
+@import '@/styles/_helpers';
+
+.scroll {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  width: 100%;
+
+  main {
+    flex-grow: 1;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: rem(1128);
+  margin: rem(29) auto rem(24);
+  font-size: rem(24);
+  line-height: per(28, 24);
+
+  span {
+    color: red;
+    margin-left: rem(8);
+  }
+}

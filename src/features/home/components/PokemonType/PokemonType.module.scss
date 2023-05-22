@@ -1,0 +1,31 @@
+@import '@/styles/_helpers';
+
+.pokemonType {
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto';
+  font-size: rem(12);
+  height: rem(16);
+  line-height: per(16, 12);
+  color: #212121;
+  background: #FDFDFD;
+  box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.18);
+  border-radius: rem(11);
+  padding: 0 rem(12);
+
+  &[data-type='grass'] {
+    background: #73D677;
+  }
+
+  &[data-type='poison'] {
+    background: #07D6F2;
+  }
+
+  &[data-type='fire'] {
+    background: #fd7d24;
+  }
+
+  &[data-type='flying'] {
+    background: gray;
+  }
+}

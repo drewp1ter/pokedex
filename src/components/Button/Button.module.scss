@@ -1,0 +1,16 @@
+@import '@/styles/_helpers';
+
+.button {
+  font-family: 'Karla';
+  padding: 0 rem(28);
+  background: #f2f2f2;
+  border-radius: 8px;
+  font-size: rem(24);
+  line-height: per(63, 24);
+  cursor: pointer;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}

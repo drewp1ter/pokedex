@@ -1,0 +1,20 @@
+.progressBar {
+  background: #F6F7F9;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 6px;
+
+  span {
+    display: block;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+  &[data-color='green'] span {
+    background: linear-gradient(270deg, #64D368 0.15%, #64D368 70.88%);
+  }
+
+  &[data-color='yellow'] span {
+    background: linear-gradient(180deg, #F5DB13 0%, #F2B807 100%);
+  }
+}
