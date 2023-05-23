@@ -1,5 +1,5 @@
 'use client'
-import { usePathname } from 'next/navigation';
+import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
 import styles from './Header.module.scss'
 import Logo from './assets/logo.svg'
