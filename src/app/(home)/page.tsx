@@ -16,7 +16,7 @@ interface Props {
 const pageSize = 24
 
 async function Pokemons({ searchParams }: Props) {
-  let page = Math.max(Number(searchParams.page), 1) || 1
+  const page = Math.max(Number(searchParams.page), 1) || 1
   const { query } = searchParams
   let pokemons: NamedAPIResource[] = []
 
