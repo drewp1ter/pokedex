@@ -21,9 +21,9 @@ export async function fetchPokemons({ query, page, pageSize = 24 }: FetchPokmonP
   return { count: pokemons.length, results: pokemons.slice(offsetStart, offsetEnd) }
 }
 
-export async function fetchPokemon(name: string): Promise<PokemonDTO> {
+export async function fetchPokemon(name: string): Promise<PokemonDTO | never> {
   if (!name) throw new Error('fetchPokemon: argument "name" cannot be empty!')
-  
+
   const res = await fetch(pokeEndpoint + name, { cache: 'force-cache' })
   if (!res.ok) {
     throw new Error(`Status ${res.status}`)
