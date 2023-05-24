@@ -30,7 +30,7 @@
     display: block;
     width: rem(62);
     border-bottom: 3px solid #212121;
-    transition: left .2s ease;
+    transition: left 0.2s ease;
   }
 
   &[data-pathname='/pokedex']::before {
@@ -45,24 +45,23 @@
     left: rem(484);
   }
 
-  li {
-    a {
-      font-size: rem(25);
-      line-height: per(29, 25);
-      color: #212121;
-    }
+  .homeLink, .pokedexLink, .legendariesLink, .documentationLink {
+    display: block;
+    font-size: rem(25);
+    line-height: per(29, 25);
+    color: #212121;
+  }
 
-    &:nth-child(2) {
-      margin-left: rem(72);
-    }
+  .pokedexLink {
+    margin-left: rem(72);
+  }
+ 
+  .legendariesLink {
+    margin-left: rem(58);
+  }
 
-    &:nth-child(3) {
-      margin-left: rem(58);
-    }
-
-    &:nth-child(4) {
-      margin-left: rem(55);
-      margin-right: rem(-14);
-    }
+  .documentationLink {
+    margin-left: rem(55);
+    margin-right: rem(-14);
   }
 }

@@ -25,21 +25,11 @@ function Header({ className }: Props) {
         <Link href="/">
           <Logo />
         </Link>
-        <nav>
-          <ul className={styles.navbar} data-pathname={pathname}>
-            <li>
-              <Link href={Routes.Home}>Home</Link>
-            </li>
-            <li>
-              <Link href={Routes.Pokedex}>Pokédex</Link>
-            </li>
-            <li>
-              <Link href={Routes.Legendaries}>Legendaries</Link>
-            </li>
-            <li>
-              <Link href={Routes.Documentation}>Documentation</Link>
-            </li>
-          </ul>
+        <nav className={styles.navbar} data-pathname={pathname}>
+          <Link className={styles.homeLink} href={Routes.Home}>Home</Link>
+          <Link className={styles.pokedexLink} href={Routes.Pokedex}>Pokédex</Link>
+          <Link className={styles.legendariesLink} href={Routes.Legendaries}>Legendaries</Link>
+          <Link className={styles.documentationLink} href={Routes.Documentation}>Documentation</Link>
         </nav>
       </div>
     </header>
