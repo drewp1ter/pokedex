@@ -1,5 +1,30 @@
 @import '@/styles/_helpers';
 
+.homePage {
+  flex-grow: 1;
+  height: 100%;
+  width: 100%;
+  max-width: rem(1148);
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  flex-shrink: 0;
+  margin-top: rem(73);
+  font-size: rem(35);
+  line-height: per(41, 35);
+  text-align: center;
+  letter-spacing: rem(3);
+}
+
+.searchInput {
+  flex-shrink: 0;
+  margin-top: rem(34);
+}
+
 .home {
   width: 100%;
   height: 100%;
@@ -32,7 +57,7 @@
     height: 8px;
     background: #212121;
     opacity: 0.5;
-    transition: opacity ease .2s;
+    transition: opacity ease 0.2s;
   }
 
   &:hover::before {

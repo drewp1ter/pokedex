@@ -5,7 +5,11 @@ interface FetchPokmonProps {
   pageSize?: number
 }
 
-type FetchPokemonsResponse = Pick<NamedAPIResourceList, 'count' | 'results'>
+interface FetchPokemonsResponse {
+  results: NamedAPIResource[]
+  count: number
+  total: number
+}
 
 interface PokemonAbility {
   is_hidden: boolean

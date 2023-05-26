@@ -18,7 +18,7 @@ export async function fetchPokemons({ query, page, pageSize = 24 }: FetchPokmonP
   if (query) pokemons = pokemons.filter((pokemon) => ~pokemon.name.indexOf(query))
   const offsetStart = (page - 1) * pageSize
   const offsetEnd = offsetStart + pageSize
-  return { count: pokemons.length, results: pokemons.slice(offsetStart, offsetEnd) }
+  return { count: pokemons.length, results: pokemons.slice(offsetStart, offsetEnd), total: data.count }
 }
 
 export async function fetchPokemon(name: string): Promise<PokemonDTO | never> {
